@@ -15,11 +15,13 @@ It uses webhooks to obtain information about the ongoing calls and act according
 ## Setup
 You will need a funded [Twilio account](https://www.twilio.com/), setup [TwiML bins](https://www.twilio.com/blog/2017/11/twiml-bins-a-serverless-and-codeless-way-to-try-twilio.html) and configure [localtunnel.me](localtunnel.me) to accept Webhooks. Check the "Twilio setup" section in the script and add the missing information 
 
-* account_sid = "" # Obtain from Twilio
-* auth_token = "" # Obtain from Twilio
-* twimlPayloadChangeGreeting = "" # <?xml version="1.0" encoding="UTF-8"?><Response><Pause length="10"/><Hangup/></Response>
-* twimlPayloadChangeGetNewestMessage = "" # <?xml version="1.0" encoding="UTF-8"?><Response><Pause length="10"/><Hangup/></Response>
-* status_callback_url = "" # Obtain from localtunnel.me
+```
+account_sid = "" # Obtain from Twilio
+auth_token = "" # Obtain from Twilio
+twimlPayloadChangeGreeting = "" # <?xml version="1.0" encoding="UTF-8"?><Response><Pause length="10"/><Hangup/></Response>
+twimlPayloadChangeGetNewestMessage = "" # <?xml version="1.0" encoding="UTF-8"?><Response><Pause length="10"/><Hangup/></Response>
+status_callback_url = "" # Obtain from localtunnel.me
+```
 
 ## Usage
 ```
